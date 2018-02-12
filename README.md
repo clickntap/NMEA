@@ -97,10 +97,26 @@ The Output JSON:
 
 The interpreted sentences are:
 
-$GPGGA - Global Positioning System Fix Data
-$GPGSA - GPS DOP and active satellites
-$GPGSV - GPS Satellites in view
-$GPRMC - Recommended minimum specific GPS/Transit data
-$GPVTG - Track made good and ground speed
+- $GPGGA - Global Positioning System Fix Data
+- $GPGSA - GPS DOP and active satellites
+- $GPGSV - GPS Satellites in view
+- $GPRMC - Recommended minimum specific GPS/Transit data
+- $GPVTG - Track made good and ground speed
 
-But it's really simple add new interpreter.
+But it's really easy to add a new interpreter.
+
+
+### Use with Maven
+
+```xml
+
+<dependency>
+  <groupId>com.clickntap</groupId>
+  <artifactId>nmea</artifactId>
+  <version>1.0</version>
+</dependency>
+
+```
+
+### Support or Contact
+Having trouble with NMEA API 1.x? Contact info@clickntap.com and we’ll help you sort it out.
