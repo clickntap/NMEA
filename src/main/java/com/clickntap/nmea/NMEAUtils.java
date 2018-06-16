@@ -38,6 +38,7 @@ public class NMEAUtils {
 		position.setAltitude(info.getDouble("altitude"));
 		position.setNumberOfSatellites(info.getInt("numberOfSatellites"));
 		position.setSpeed(info.getDouble("speedKnots"));
+		position.setTrackMadeGood(info.getDouble("trackMadeGood"));
 		try {
 			Date date = new SimpleDateFormat("ddMMyyHHmmss.SSS").parse(info.getString("date") + info.getString("time"));
 			position.setTime(date.getTime() / 1000);

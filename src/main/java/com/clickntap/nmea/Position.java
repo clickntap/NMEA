@@ -7,6 +7,7 @@ public class Position {
 	private Double latitude;
 	private Integer numberOfSatellites;
 	private Double speed;
+	private Double trackMadeGood;
 
 	public Long getTime() {
 		return time;
@@ -56,6 +57,14 @@ public class Position {
 		this.speed = speed;
 	}
 
+	public Double getTrackMadeGood() {
+		return trackMadeGood;
+	}
+
+	public void setTrackMadeGood(Double trackMadeGood) {
+		this.trackMadeGood = trackMadeGood;
+	}
+
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
 		sb.append(getTime());
@@ -67,6 +76,8 @@ public class Position {
 		sb.append(getAltitude());
 		sb.append(',');
 		sb.append(getSpeed());
+		sb.append(',');
+		sb.append(getTrackMadeGood());
 		sb.append(',');
 		sb.append(getNumberOfSatellites());
 		return sb.toString();

@@ -53,6 +53,7 @@ public class NMEA {
 							if (parser.getCode().equals("VTG")) {
 								info.put("speedKnots", item.get("speedKnots"));
 								info.put("speedKmPerHours", item.get("speedKmPerHours"));
+								info.put("trackMadeGood", item.get("trackMadeGood"));
 							}
 							if (parser.getCode().equals("RMC")) {
 								info.put("date", item.get("date"));
